@@ -24,3 +24,19 @@ pnpm install
 pnpm dev
 ```
 
+
+Deployment notes
+
+https://github.com/cloudflare/next-on-pages/tree/main/packages/next-on-pages
+
+
+Build and preview your application locally
+To ensure that your application is being built in a manner that is fully compatible with Cloudflare Pages, before deploying it, or whenever you are comfortable checking the correctness of the application during your development process, you will want to build and preview it locally using Cloudflare's workerd JavaScript runtime.
+
+Do this by running:
+
+pnpm dlx @cloudflare/next-on-pages
+
+And preview your project by running:
+
+pnpm dlx wrangler pages dev .vercel/output/static
