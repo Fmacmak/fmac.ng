@@ -3,8 +3,8 @@ import React from "react";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
-import { Redis } from "@upstash/redis";
-import { Eye } from "lucide-react";
+// import { Redis } from "@upstash/redis";
+// import { Eye } from "lucide-react";
 
 // const redis = Redis.fromEnv();
 
@@ -45,36 +45,123 @@ export default async function ProjectsPage() {
             Projects
           </h2>
           <p className="mt-4 text-zinc-400">
-            Some of the projects are from work and some are on my own time.
+            I've built robust systems for full-stack web apps, mobile backends, machine learning pipelines, and trading platforms. Each project demonstrates comprehensive backend architecture and infrastructure implementation.
           </p>
         </div>
         <div className="w-full h-px bg-zinc-800" />
 
         <div className="grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 ">
           <Card>
-            <Link href={`/projects}`}>
+            <Link href={`https://www.goalr.world`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-zinc-100"></div>
-                  <span className="flex items-center gap-1 text-xs text-zinc-500">
+                  {/* <span className="flex items-center gap-1 text-xs text-zinc-500">
                     <Eye className="w-4 h-4" />{" "}
                     {Intl.NumberFormat("en-US", { notation: "compact" }).format(0)}
-                  </span>
+                  </span> */}
                 </div>
 
                 <h2
                   id="featured-post"
-                  className="mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display"
+                  className="mt-4 text-3xl font-bold text-teal-600 group-hover:text-emerald-200 sm:text-4xl font-display"
                 >
-                  {"Title"}
+                  {"Goalr"}
                 </h2>
                 <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                  {"Description"}
+                  {"Compete and sync activity data from multiple sources with a chance to earn profits by meeting your goals."}
                 </p>
                 <div className="absolute bottom-4 md:bottom-8">
-                  <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+                  {/* <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
                     Read more <span aria-hidden="true">&rarr;</span>
-                  </p>
+                  </p> */}
+                </div>
+              </article>
+            </Link>
+          </Card>
+
+          <Card>
+            <Link href={`https://www.busbuzzer.com`}>
+              <article className="relative w-full h-full p-4 md:p-8">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="text-xs text-zinc-100"></div>
+                  {/* <span className="flex items-center gap-1 text-xs text-zinc-500">
+                    <Eye className="w-4 h-4" />{" "}
+                    {Intl.NumberFormat("en-US", { notation: "compact" }).format(0)}
+                  </span> */}
+                </div>
+
+                <h2
+                  id="featured-post"
+                  className="mt-4 text-3xl font-bold text-yellow-400 group-hover:text-yellow-200 sm:text-4xl font-display"
+                >
+                  {"Busbuzzer"}
+                </h2>
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                  {"Track and route bus routes and trips with real time data."}
+                </p>
+                <div className="absolute bottom-4 md:bottom-8">
+                  {/* <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+                    Read more <span aria-hidden="true">&rarr;</span>
+                  </p> */}
+                </div>
+              </article>
+            </Link>
+          </Card>
+
+          <Card>
+            <Link href={`https://www.tutela.com.ng`}>
+              <article className="relative w-full h-full p-4 md:p-8">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="text-xs text-zinc-100"></div>
+                  {/* <span className="flex items-center gap-1 text-xs text-zinc-500">
+                    <Eye className="w-4 h-4" />{" "}
+                    {Intl.NumberFormat("en-US", { notation: "compact" }).format(0)}
+                  </span> */}
+                </div>
+
+                <h2
+                  id="featured-post"
+                  className="mt-4 text-3xl font-bold text-purple-400 group-hover:text-purple-200 sm:text-4xl font-display"
+                >
+                  {"Tutela"}
+                </h2>
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                  {"All in one Estate Management System for residents and faciliity managers."}
+                </p>
+                <div className="absolute bottom-4 md:bottom-8">
+                  {/* <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+                    Read more <span aria-hidden="true">&rarr;</span>
+                  </p> */}
+                </div>
+              </article>
+            </Link>
+          </Card>
+
+          <Card>
+            <Link href={`https://plotpal.com.ng`}>
+              <article className="relative w-full h-full p-4 md:p-8">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="text-xs text-zinc-100"></div>
+                  {/* <span className="flex items-center gap-1 text-xs text-zinc-500">
+                    <Eye className="w-4 h-4" />{" "}
+                    {Intl.NumberFormat("en-US", { notation: "compact" }).format(0)}
+                  </span> */}
+                </div>
+
+                <h2
+                  id="featured-post"
+                  className="mt-4 text-3xl font-bold text-emerald-400 group-hover:text-emerald-200 sm:text-4xl font-display"
+                >
+                  {"Plotpal"}
+                </h2>
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                  {"Fractional ownership of land and properties."}
+                </p>
+                <div className="absolute bottom-4 md:bottom-8">
+                  {/* <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+                    Read more <span aria-hidden="true">&rarr;</span>
+                  </p> */}
                 </div>
               </article>
             </Link>
