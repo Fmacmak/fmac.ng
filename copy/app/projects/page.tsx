@@ -168,7 +168,7 @@ export default async function ProjectsPage() {
           </Card>
 
        <Card>
-            <Link href={`https://thth-eta.vercel.app/`}>
+            <Link href={`https://www.thth.ng/`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-zinc-100"></div>
