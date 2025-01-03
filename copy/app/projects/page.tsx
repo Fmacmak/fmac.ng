@@ -138,36 +138,7 @@ export default async function ProjectsPage() {
             </Link>
           </Card>
 
-          <Card>
-            <Link href={`https://api.plotpal.com.ng`}>
-              <article className="relative w-full h-full p-4 md:p-8">
-                <div className="flex items-center justify-between gap-2">
-                  <div className="text-xs text-zinc-100"></div>
-                  {/* <span className="flex items-center gap-1 text-xs text-zinc-500">
-                    <Eye className="w-4 h-4" />{" "}
-                    {Intl.NumberFormat("en-US", { notation: "compact" }).format(0)}
-                  </span> */}
-                </div>
-
-                <h2
-                  id="featured-post"
-                  className="mt-4 text-3xl font-bold text-emerald-400 group-hover:text-emerald-200 sm:text-4xl font-display"
-                >
-                  {"Plotpal"}
-                </h2>
-                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                  {"Fractional ownership of land and properties."}
-                </p>
-                <div className="absolute bottom-4 md:bottom-8">
-                  {/* <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
-                    Read more <span aria-hidden="true">&rarr;</span>
-                  </p> */}
-                </div>
-              </article>
-            </Link>
-          </Card>
-
-       <Card>
+                 <Card>
             <Link href={`https://www.thth.ng/`}>
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
@@ -224,6 +195,37 @@ export default async function ProjectsPage() {
               </article>
             </Link>
           </Card>
+
+
+          <Card>
+            <Link href={`https://api.plotpal.com.ng`}>
+              <article className="relative w-full h-full p-4 md:p-8">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="text-xs text-zinc-100"></div>
+                  {/* <span className="flex items-center gap-1 text-xs text-zinc-500">
+                    <Eye className="w-4 h-4" />{" "}
+                    {Intl.NumberFormat("en-US", { notation: "compact" }).format(0)}
+                  </span> */}
+                </div>
+
+                <h2
+                  id="featured-post"
+                  className="mt-4 text-3xl font-bold text-emerald-400 group-hover:text-emerald-200 sm:text-4xl font-display"
+                >
+                  {"Plotpal"}
+                </h2>
+                <p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+                  {"Fractional ownership of land and properties."}
+                </p>
+                <div className="absolute bottom-4 md:bottom-8">
+                  {/* <p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+                    Read more <span aria-hidden="true">&rarr;</span>
+                  </p> */}
+                </div>
+              </article>
+            </Link>
+          </Card>
+
 
 
           <div className="flex flex-col w-full gap-8 mx-auto border-t border-gray-900/10 lg:mx-0 lg:border-t-0 ">
